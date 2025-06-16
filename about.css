@@ -22,7 +22,21 @@ header {
     height: 2cm;
     width: 2cm;
     border-radius: 50%;
+    animation-name: logo;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
+@keyframes logo {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+    
+}
+
 h1 {
     font-size: 2em;
     margin: 0;
@@ -48,6 +62,19 @@ nav a {
     padding: 10px 20px;
     border-radius: 5px;
     transition: 0.3s;
+    animation-name: button;
+    animation-duration: 2s;
+}
+@keyframes button {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    
 }
 
 nav a:hover {
@@ -79,7 +106,23 @@ main {
     margin: 20px;
     line-height: 0.7cm;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    animation-name: scroll;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
 }
+@keyframes scroll {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        /* transform: translateY(0px); */
+         transform: translateY(0) scale(1) rotateY(0deg);
+    }
+}
+
+
 
 #about{
     width: 7cm;
