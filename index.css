@@ -125,3 +125,84 @@ hr {
 h2{
     color: white;
 }
+
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    #Logo {
+        height: 1.5cm;
+        width: 1.5cm;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav a {
+        padding: 8px 15px;
+    }
+
+    #image {
+        height: 300px;
+    }
+    h2 {
+        font-size: 1.2em;
+    }
+    #welcome td {
+        height: 3;
+    }
+    #welcome {
+        width: 100%;
+        border-collapse: collapse;
+        border: none;
+    }
+    #Logo {
+        height: 1.5cm;
+        width: 1.5cm;
+    }
+    p {
+        font-size: 0.9em;
+    }
+    hr {
+        border-color: #aaa;
+    }
+    h2 {
+        font-size: 1.2em;
+    }
+    #welcome td {
+        height: 3;
+    }
+    #welcome {
+        width: 100%;
+        border-collapse: collapse;
+        border: none;
+    }
+    #image {
+        height: 300px;
+    }
+    h2 {
+        font-size: 1.2em;
+    }
+    #Logo {
+        height: 1.5cm;
+        width: 1.5cm;
+    }
+    p {
+        font-size: 0.9em;
+    }
+    hr {
+        border-color: #aaa;
+    }
+    
+}
