@@ -17,6 +17,9 @@
     <td><img src="14.jpg" alt="Logo Right" id="Logo"></td>
   </tr>
 </table>
+<script>
+  alert("Account Page Loaded Successfully!");
+</script>
 
     <nav>
       <button onclick="goHome()">Home</button>
@@ -49,6 +52,9 @@
 </script>
 
 <hr>
+<div id="message" style="color: rgb(120, 204, 120); font-weight: bold; text-align: center;">
+  Account page ready! Please fill the form below.
+</div>
 
 <h2 class="form-title">Create Your Account</h2>
 <p class="form-subtext">Sign up to unlock your musical journey 🎵</p>
@@ -88,6 +94,16 @@
 <br>
 <hr>
 <p class="footer">© 2025 VibeVault. All rights reserved.</p>
+
+<script>
+  document.getElementById("registerForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent form submission
+
+    // Optional: You can add form validation here if needed
+
+    document.getElementById("success-msg").textContent = "Account created successfully!";
+  });
+</script>
 
 </body>
 </html>
