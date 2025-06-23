@@ -56,8 +56,18 @@ nav {
     animation-duration: 2s;
 }
 
-nav a {
-    text-decoration: none;
+button{
+    background: #473d8b00;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    animation-name: nav;
+    animation-duration: 2s;
+}
+
+button{
+    /* text-decoration: none; */
     color: white;
     background: #695acd5e;
     padding: 10px 20px;
@@ -79,7 +89,7 @@ nav a {
     }
 }
 
-nav a:hover {
+#navbar button:hover {
     background: #9370db;
     border-radius: 40%;
 }

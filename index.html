@@ -1,53 +1,74 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
 
-    <title>VibeVault - Home</title> 
+    <title>VibeVault - Home</title>
     <link rel="stylesheet" href="index.css">
 
-</head>
-<body>
+  </head>
+  <body>
 
-<table align="center">
-  <tr>
-    <td><img src="14.jpg" alt="Logo Left" id="Logo" ></td>
-    <td>
-      <h1 align="center" >VibeVault</h1>
-      <p align="center" style="font-style: italic; margin: 0;">Your ultimate music destination</p>
-    </td>
-    <td><img src="14.jpg" alt="Logo Right" id="Logo"></td>
-  </tr>
-</table>
+    <table align="center">
+      <tr>
+        <td><img src="14.jpg" alt="Logo Left" id="Logo"></td>
+        <td>
+          <h1 align="center">VibeVault</h1>
+          <p align="center" style="font-style: italic; margin: 0;">Your ultimate
+            music destination</p>
+        </td>
+        <td><img src="14.jpg" alt="Logo Right" id="Logo"></td>
+      </tr>
+    </table>
 
     <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="topsongs.html">Top Songs</a>
-        <a href="contact.html">Contact</a>
-        <a href="feedback.html">Feedback</a>
-        <a href="account.html">Account</a>
+      <button onclick="goHome()">Home</button>
+      <button onclick="goAbout()">About</button>
+      <button onclick="goTopSongs()">Top Songs</button>
+      <button onclick="goContact()">Contact</button>
+      <button onclick="goFeedback()">Feedback</button>
+      <button onclick="goAccount()">Account</button>
     </nav>
 
- <!-- width="100%" cellpadding="0" cellspacing="0" border="0"  -->
-<table id="welcome">  
-  <tr>
-    <!-- bgcolor="black" height="5" -->
-    <td align="center" >
-      <h2 >Welcome to VibeVault</h2>
-    </td>
-  </tr>
-</table>
+    <script>
+  function goHome() {
+    window.location.href = "index.html";
+  }
+  function goAbout() {
+    window.location.href = "about.html";
+  }
+  function goTopSongs() {
+    window.location.href = "topsongs.html";
+  }
+  function goContact() {
+    window.location.href = "contact.html";
+  }
+  function goFeedback() {
+    window.location.href = "feedback.html";
+  }
+  function goAccount() {
+    window.location.href = "account.html";
+  }
+</script>
 
-<!-- style="width: 100%; max-height: 400px; object-fit: cover;" -->
-<img src="4.png" alt="Main Music Image" id="image" >
+    <!-- width="100%" cellpadding="0" cellspacing="0" border="0"  -->
+    <table id="welcome">
+      <tr>
+        <!-- bgcolor="black" height="5" -->
+        <td align="center">
+          <h2>Welcome to VibeVault</h2>
+        </td>
+      </tr>
+    </table>
 
+    <!-- style="width: 100%; max-height: 400px; object-fit: cover;" -->
+    <img src="4.png" alt="Main Music Image" id="image">
 
-<h2 align="center" >Feel the Music, Live the Vibe</h2>
-<p align="center">Discover new songs, explore artists, and dive into the world of music with us.</p>
+    <h2 align="center">Feel the Music, Live the Vibe</h2>
+    <p align="center">Discover new songs, explore artists, and dive into the
+      world of music with us.</p>
 
+    <hr>
+    <p align="center">© 2025 VibeVault. All rights reserved.</p>
 
-<hr>
-<p align="center">© 2025 VibeVault. All rights reserved.</p>
-
-</body>
+  </body>
 </html>
