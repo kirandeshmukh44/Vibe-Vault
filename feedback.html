@@ -73,13 +73,23 @@
           <label><b>Your Feedback:</b></label><br>
           <textarea name="feedback" rows="5" cols="35" placeholder="Write your feedback here..." required></textarea><br><br>
 
-          <input type="submit" value="Submit Feedback" class="submit-btn">
-          <input type="reset" value="Clear" class="reset-btn">
+          <input type="submit" value="Submit Feedback" class="submit-btn" onsubmit="SubmitEvent()">
+          <input type="reset" value="Clear" class="reset-btn" onclick="ClearEvent()">
         </form>
       </td>
     </tr>
   </table>
 </div>
+
+<script>
+  function SubmitEvent(){
+    alert("Thank you for your feedback! We will review it and make necessary changes to improve VibeVault.");
+
+  }
+  function ClearEvent(){
+    alert("Your feedback has been cleared. Please fill in the form again.");
+  }
+</script>
 
 <br>
 <hr>
